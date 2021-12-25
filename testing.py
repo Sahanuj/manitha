@@ -8,15 +8,6 @@ from urllib.parse import quote
 
 br = mechanize.Browser()
 
-##colours
-p = "\x1b[0;97m" # White
-m = "\x1b[0;91m" # Red
-h = "\x1b[0;92m" # Green
-k = "\x1b[0;93m" # Yellow
-b = "\x1b[0;94m" # Blue
-u = "\x1b[0;95m" # Purple
-o = "\x1b[0;96m" # Light Blue
-N = "\033[0m" # Off Color
 
 ##logo
 _logo_line_1_ = ('\x1b[1;91m___   ___ ___ ___ _______ _______')
@@ -35,13 +26,8 @@ def _my_logo_():
     print(_logo_line_6_)
     print(_logo_line_7_+'\n')
 
-def menu():
-    _my_logo_()
-    h = input('%s╚══[%s•%s] %sinput amount of ids you want do dump : '%(k,p,k,p))
-    print("dump compleat. . . .");time.sleep(3)
-    id_genarate()
 
-
+h = 5000
 def id_genarate():
     k = 10000000
     i = 1
@@ -81,7 +67,9 @@ def test():
         except:pass
 os.system("del output.txt")
 
-
+def menu():
+    _my_logo_()
+    h = input('%s╚══[%s•%s] %sToken : '%(k,p,k,p))
 
 
 
@@ -90,5 +78,5 @@ os.system("del output.txt")
 
 
 if __name__=='__main__':
-  menu()
+  id_genarate()
 
