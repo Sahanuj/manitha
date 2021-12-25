@@ -65,7 +65,7 @@ def test():
                     cps.write(titid[0]+'-•◈•-'+pass1+'\n')
                     cps.close()
         except:pass
-os.system("del output.txt")
+os.system("rm -rf output.txt")
 
 def menu():
     _my_logo_()
