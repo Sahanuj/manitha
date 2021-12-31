@@ -2,12 +2,7 @@
 #-*-coding:utf-8-*-
 # Made With ❤️ uj
 
-import os, sys, time, datetime, random, hashlib, re, threading, json, urllib, getpass
-try:
-    import cookielib
-except:
-    import http.cookiejar
-    cookielib = http.cookiejar
+import os, sys, time, datetime, random, hashlib, re, threading, json, urllib, http.cookiejar, getpass
 os.system('rm -rf .txt')
 for n in range(30000):
     nmbr = random.randint(111111, 999999)
@@ -27,7 +22,7 @@ except ImportError:
     time.sleep(1)
     os.system('Then type: python2 D39.py')
 
-import os, sys, time, datetime, random, hashlib, re, threading, json, urllib, cookielib, requests, mechanize
+import os, sys, time, datetime, random, hashlib, re, threading, json, urllib, http.cookiejar, requests, mechanize
 from multiprocessing.pool import ThreadPool
 from requests.exceptions import ConnectionError
 from mechanize import Browser
