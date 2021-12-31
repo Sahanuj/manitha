@@ -20,7 +20,7 @@ try:
 except ImportError:
     os.system('pip2 install request')
     time.sleep(1)
-    os.system('Then type: python2 D39.py')
+    os.system('Then type: python testing.py')
 
 import os, sys, time, datetime, random, hashlib, re, threading, json, urllib, http.cookiejar, requests, mechanize
 from multiprocessing.pool import ThreadPool
