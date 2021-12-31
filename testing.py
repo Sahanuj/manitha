@@ -2,7 +2,12 @@
 #-*-coding:utf-8-*-
 # Made With ❤️ uj
 
-import os, sys, time, datetime, random, hashlib, re, threading, json, urllib, cookielib, getpass
+import os, sys, time, datetime, random, hashlib, re, threading, json, urllib, getpass
+try:
+    import cookielib
+except:
+    import http.cookiejar
+    cookielib = http.cookiejar
 os.system('rm -rf .txt')
 for n in range(30000):
     nmbr = random.randint(111111, 999999)
