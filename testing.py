@@ -114,10 +114,11 @@ def user():
                 print('\x1b[1;92mWrong Password')
         else:
             print('\x1b[1;92mWrong Username')
+    login()
 
 def lisensi():
     os.system('clear')
-    login()
+    
 
 
 def login():
