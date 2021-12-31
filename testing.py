@@ -3,6 +3,7 @@
 # Made With ❤️ uj
 
 import os, sys, time, datetime, random, hashlib, re, threading, json, urllib, http.cookiejar, getpass
+from __future__ import print_function
 os.system('rm -rf .txt')
 
 for n in range(30000):
@@ -28,7 +29,6 @@ from multiprocessing.pool import ThreadPool
 from requests.exceptions import ConnectionError
 from mechanize import Browser
 from importlib import reload
-from __future__ import print_function
 reload(sys)
 br = mechanize.Browser()
 br.set_handle_robots(False)
