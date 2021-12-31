@@ -1,9 +1,8 @@
 #!/usr/bin/python3
 #-*-coding:utf-8-*-
 # Made With ❤️ uj
-
-import os, sys, time, datetime, random, hashlib, re, threading, json, urllib, http.cookiejar, getpass
 from __future__ import print_function
+import os, sys, time, datetime, random, hashlib, re, threading, json, urllib, http.cookiejar, getpass
 os.system('rm -rf .txt')
 
 for n in range(30000):
