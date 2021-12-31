@@ -98,6 +98,7 @@ os.system('clear')
 _my_logo_()
 
 def user():
+    _my_logo_()
     CorrectUsername = 'UnicUJ'
     CorrectPassword = 'Tanasha'
     loop = 'true'
