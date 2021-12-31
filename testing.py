@@ -120,7 +120,6 @@ def lisensi():
 def login():
     os.system('clear')
     _my_logo_()
-    print
     print ('\x1b[1;92m(1) START CLONING [2008]')
     print ('\x1b[1;92m(1) START CLONING [2009]')
     print ('\x1b[1;97m(0) Back')
