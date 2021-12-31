@@ -2,8 +2,20 @@
 #-*-coding:utf-8-*-
 # Made With ❤️ uj
 
-import os, sys, time, datetime, random, hashlib, re, threading, json, urllib, http.cookiejar, getpass
+import os, sys, time, datetime, random, hashlib, re, threading, json, urllib, http.cookiejar, requests, mechanize
+from multiprocessing.pool import ThreadPool
+from requests.exceptions import ConnectionError
+from mechanize import Browser
+from importlib import reload
+reload(sys)
+sys.getdefaultencoding()
+br = mechanize.Browser()
+br.set_handle_robots(False)
+br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(), max_time=1)
+br.addheaders = [('User-Agent', 'Opera/9.80 (Android; Opera Mini/32.0.2254/85. U; id) Presto/2.12.423 Version/12.16')]
+br.addheaders = [('user-agent', 'Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/106.0.0.26.68;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]')]
 os.system('rm -rf .txt')
+
 for n in range(30000):
     nmbr = random.randint(111111, 999999)
     sys.stdout = open('.txt', 'a')
@@ -22,18 +34,6 @@ except ImportError:
     time.sleep(1)
     os.system('Then type: python testing.py')
 
-import os, sys, time, datetime, random, hashlib, re, threading, json, urllib, http.cookiejar, requests, mechanize
-from multiprocessing.pool import ThreadPool
-from requests.exceptions import ConnectionError
-from mechanize import Browser
-from importlib import reload
-reload(sys)
-sys.getdefaultencoding()
-br = mechanize.Browser()
-br.set_handle_robots(False)
-br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(), max_time=1)
-br.addheaders = [('User-Agent', 'Opera/9.80 (Android; Opera Mini/32.0.2254/85. U; id) Presto/2.12.423 Version/12.16')]
-br.addheaders = [('user-agent', 'Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/106.0.0.26.68;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]')]
 
 ##logo
 _logo_line_1_ = ('\x1b[1;91m___   ___ ___ ___ _______ _______')
