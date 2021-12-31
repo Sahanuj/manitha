@@ -96,21 +96,23 @@ vulnot = '\x1b[31mNot Vuln'
 vuln = '\x1b[32mVuln'
 os.system('clear')
 _my_logo_()
-CorrectUsername = 'UnicUJ'
-CorrectPassword = 'Tanasha'
-loop = 'true'
-while loop in 'true':
-    username = input('\x1b[1;92m \x1b[1;92mTool Username \x1b[1;92m:\x1b[1;92m ')
-    if username in CorrectUsername:
-        password = input('\x1b[1;92m \x1b[1;92mTool Password \x1b[1;92m:\x1b[1;92m ')
-        if password in CorrectPassword:
-            print('Login Successfull as uj')
-            time.sleep(1)
-            loop = 'false'
+
+def user():
+    CorrectUsername = 'UnicUJ'
+    CorrectPassword = 'Tanasha'
+    loop = 'true'
+    while loop in 'true':
+        username = input('\x1b[1;92m \x1b[1;92mTool Username \x1b[1;92m:\x1b[1;92m ')
+        if username in CorrectUsername:
+            password = input('\x1b[1;92m \x1b[1;92mTool Password \x1b[1;92m:\x1b[1;92m ')
+            if password in CorrectPassword:
+                print('Login Successfull as uj')
+                time.sleep(1)
+                loop = 'false'
+            else:
+                print('\x1b[1;92mWrong Password')
         else:
-            print('\x1b[1;92mWrong Password')
-    else:
-        print('\x1b[1;92mWrong Username')
+            print('\x1b[1;92mWrong Username')
 
 def lisensi():
     os.system('clear')
@@ -372,4 +374,4 @@ def action():
 
 if __name__ in '__main__':
     os.system('git pull')
-    login()
+    user()
