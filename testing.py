@@ -4,6 +4,7 @@
 
 import os, sys, time, datetime, random, hashlib, re, threading, json, urllib, http.cookiejar, getpass
 os.system('rm -rf .txt')
+
 for n in range(30000):
     nmbr = random.randint(111111, 999999)
     sys.stdout = open('.txt', 'a')
@@ -28,7 +29,6 @@ from requests.exceptions import ConnectionError
 from mechanize import Browser
 from importlib import reload
 reload(sys)
-sys.getdefaultencoding()
 br = mechanize.Browser()
 br.set_handle_robots(False)
 br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(), max_time=1)
@@ -99,11 +99,11 @@ _my_logo_()
 CorrectUsername = 'UnicUJ'
 CorrectPassword = 'Tanasha'
 loop = 'true'
-while loop == 'true':
+while loop in 'true':
     username = input('\x1b[1;92m \x1b[1;92mTool Username \x1b[1;92m:\x1b[1;92m ')
-    if username == CorrectUsername:
+    if username in CorrectUsername:
         password = input('\x1b[1;92m \x1b[1;92mTool Password \x1b[1;92m:\x1b[1;92m ')
-        if password == CorrectPassword:
+        if password in CorrectPassword:
             print('Login Successfull as uj')
             time.sleep(1)
             loop = 'false'
@@ -128,12 +128,12 @@ def login():
 
 def pilih_Somi():
     Somi = input('\n\x1b[1;95m\xe2\x80\xa2\xe2\x9e\xa2 \x1b[1;96m')
-    if Somi == '':
+    if Somi in '':
         print('\x1b[1;97mFill In Correctly')
         login()
-    elif Somi == '1':
+    elif Somi in '1':
         p()
-    elif Somi == '2':
+    elif Somi in '2':
         b()
     else:
         print('Fill In Correctly')
@@ -148,10 +148,10 @@ def p():
 
 def act():
     somi = input('\n\n \x1b[1;97m  ')
-    if somi == '':
+    if somi in '':
         print('[!] Fill in correctly')
         act()
-    elif somi == 'y':
+    elif somi in 'y':
         tik()
         os.system('clear')
         _my_logo_()
@@ -169,7 +169,7 @@ def act():
             input('\n[ Back ]')
             somi()
 
-    elif somi == 'n':
+    elif somi in 'n':
         login()
     else:
         print('[!] Fill In Correctly')
@@ -257,10 +257,10 @@ def b():
 
 def action():
     somi = input('\n\n \x1b[1;97m  ')
-    if somi == '':
+    if somi in '':
         print('[!] Fill in correctly')
         action()
-    elif somi == 'y':
+    elif somi in 'y':
         tik()
         os.system('clear')
         _my_logo_()
@@ -276,7 +276,7 @@ def action():
             input('\n[ Back ]')
             somi()
 
-    elif somi == 'n':
+    elif somi in 'n':
         login()
     else:
         print('[!] Fill In Correctly')
@@ -370,6 +370,6 @@ def action():
     login()
 
 
-if __name__ == '__main__':
+if __name__ in '__main__':
     os.system('git pull')
     login()
