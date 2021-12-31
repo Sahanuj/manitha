@@ -28,6 +28,7 @@ from multiprocessing.pool import ThreadPool
 from requests.exceptions import ConnectionError
 from mechanize import Browser
 from importlib import reload
+from __future__ import print_function
 reload(sys)
 br = mechanize.Browser()
 br.set_handle_robots(False)
@@ -99,7 +100,6 @@ _my_logo_()
 
 def user():
     _my_logo_()
-    print("hello fucking world")
     CorrectUsername = 'UnicUJ'
     CorrectPassword = 'Tanasha'
     loop = 'true'
@@ -378,3 +378,4 @@ def action():
 if __name__ in '__main__':
     os.system('git pull')
     user()
+   
